@@ -1,0 +1,60 @@
+@font-face {
+	font-family: 'Circe';
+	src: url('../fonts/Circe-Regular.woff');
+	src: local('../fonts/Circe-Regular'), local('Circe-Regular'),
+		url('../fonts/Circe-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+@font-face {
+	font-family: 'Circe Bold';
+	src: url('../fonts/Circe-Bold.woff');
+	src: local('../fonts/Circe-Bold'), local('Circe-Bold'),
+		url('../fonts/Circe-Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+@font-face {
+	font-family: 'Circe EB';
+	src: url('../fonts/Circe-ExtraBold.woff');
+	src: local('../fonts/Circe-ExtraBold'), local('Circe-ExtraBold'),
+		url('../fonts/Circe-ExtraBold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+@font-face {
+	font-family: 'Circe Light';
+	src: url('../fonts/Circe-Light.woff');
+	src: local('../fonts/Circe-Light'), local('Circe-Light'),
+		url('../fonts/Circe-Light.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat.woff');
+	src: local('../fonts/Montserrat'), local('Montserrat'),
+		url('../fonts/Montserrat.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+@font-face {
+	font-family: 'Montserrat Bold';
+	src: url('../fonts/Montserrat-Bold.woff');
+	src: local('../fonts/Montserrat-Bold'),
+		local('Montserrat-Bold'),
+		url('../fonts/Montserrat-Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}

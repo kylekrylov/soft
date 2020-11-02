@@ -1,0 +1,175 @@
+
+*
+	box-sizing: border-box
+	outline: none
+
+*:focus
+	outline: none
+	  
+button 
+	background: none
+
+	&:focus
+		border: none
+		outline: none
+
+a, button, input, input:focus, li, textarea
+	border: none
+	text-decoration: none
+	color: inherit
+	outline: none
+	list-style: none
+
+	&:hover
+		text-decoration: none
+		color: inherit
+
+a:hover, button:hover
+	cursor: pointer
+
+body, html
+	height: 100%
+
+body
+	position: relative
+	
+	margin: 0
+
+	overflow-x: hidden
+	+regular
+
+main 
+	min-height: 100%
+
+input
+	appearance: none
+
+	&:invalid
+		box-shadow: none
+
+h1,h2,h3,h4,h5,h6,p, ul
+	margin: 0	
+	padding: 0
+	
+img
+	max-width: 100%
+	border: none
+	outline: none
+
+.button
+	position: relative
+	z-index: 1
+
+	width: 195px
+	height: 41px
+	box-shadow: 0 14px 21px 1px rgba(55, 55, 55, 0.16)
+	border-radius: 21px
+	background-image: $lg_dark
+
+	color: #ffffff
+	font-size: 15px
+	font-weight: 400
+
+	letter-spacing: -0.75px
+	overflow: hidden
+	+eb 
+	+trs
+
+	&:active, &:focus
+		border: none
+		outline: none
+
+	&:before
+		content: ''
+		width: 150%
+		height: 150%
+
+		background-image: $lg
+		position: absolute
+		left: 0%
+		top: -10%
+		transform: translatey(-50%)
+		z-index: -1
+
+		transform: translate(-50%, -100%) rotate(-35deg)
+		transition: all .2s ease-in
+
+	&:hover
+		color: #ffffff
+		box-shadow: none
+
+		&:before
+			transform: translate(0, 0%) rotate(0deg)
+		
+	&_red
+		color: #ffffff
+		
+		box-shadow: 0 14px 21px 1px rgba(55, 55, 55, 0.16)
+		border-radius: 30px
+		background-image: $lg 
+
+		font-size: 15px
+		letter-spacing: .2px
+		+eb
+		+trs
+
+		&:hover
+			color: #ffffff
+			
+			box-shadow: 0 4px 51px 1px rgba($active, 0.56)
+
+small 
+	display: block
+	max-width: 100%
+
+.modal
+	form 
+		width: 100%
+		display: flex
+		flex-direction: column
+		align-items: center
+
+.input-wrapper
+	display: flex
+
+input 
+	width: 100%
+	height: 100%
+	
+	+regular
+	
+	&::placeholder
+		+regular
+
+	&:invalid 
+		box-shadow: none
+
+.title 
+	text-align: center
+	font-size: 36px
+	font-weight: 300
+	line-height: 1.2
+
+.container
+	position: relative 
+	margin-left: auto 
+	margin-right: auto 
+	max-width: 100%
+	width: 320px
+
+@media (min-width: 451px)
+	.container
+		padding: 0 10px
+		
+@media (min-width: 768px)
+	.container
+		width: 720px
+		padding: 0
+		
+@media (min-width: 992px)
+	.container
+		width: 960px
+
+@media (min-width: 1200px)
+	.container
+		width: 1140px 

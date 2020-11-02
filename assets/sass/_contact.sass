@@ -1,0 +1,152 @@
+.map
+	position: absolute
+	right: 0
+	top: 0
+	z-index: 1
+	
+	width: 50%
+	height: 100%
+
+	overflow: hidden
+
+.contact
+	position: relative
+	z-index: 1
+
+	min-height: 471px
+	margin-bottom: 40px
+	
+	overflow-x: hidden
+	
+	&__left
+		position: relative
+
+		display: flex
+		justify-content: flex-end
+		flex-direction: column
+		align-items: flex-start
+
+		width: 100%
+		max-width: 41.5%
+		margin-right: auto
+		padding-top: 58px
+
+		text-align: left
+
+	&__title
+		font-size: 36px
+		line-height: 1
+		+light
+
+	&__subtitle
+		margin-bottom: 8px
+		
+		font-size: 18px
+		+light
+
+	&__tel
+		margin-bottom: 14px
+		margin-left: 0px
+
+		color: #7e8791
+		font-size: 26px
+		+bold
+		+trs
+
+		.flag 
+			+trs
+
+		&:hover
+			color: $active
+
+			.flag 
+				fill: $active
+		
+
+	&__form
+		form 
+			align-items: stretch
+			max-width: 447px
+
+		&-title
+			margin-bottom: 9px
+
+			font-size: 18px
+			color: #000000
+			+eb
+
+		
+		span
+			width: 100%
+			max-width: 218px
+			height: 45px
+	
+			&:last-child
+				margin-left: 10px
+	
+			input
+				padding-left: 29px
+				padding-right: 29px
+	
+				font-size: 16px
+				color: #000000
+	
+				border-radius: 23px
+				border: 1px solid #e8e8e8
+				background-color: #ffffff
+				+light
+	
+				&::placeholder
+					color: #000000
+					+light
+	
+		textarea 
+			width: 100%
+			max-width: 447px
+			min-height: 105px 
+			padding-left: 29px
+			padding-right: 29px
+			padding-top: 10px
+
+			border-radius: 16px
+			border: 1px solid #e8e8e8
+			resize: none
+			+light
+			
+			&::placeholder
+				padding-top: 23px
+				color: #000000
+	
+				+light
+		
+		.submit
+			min-width: auto
+			width: 140px
+			height: 45px
+			margin-right: 20px
+	
+			font-size: 15px
+	
+		small
+			display: block
+			max-width: 288px
+			
+			font-size: 12px
+			line-height: 1.2
+			+light 
+
+		&-bottom
+			display: flex
+			align-items: center
+
+	.input-wrapper
+		display: flex
+		justify-content: space-between
+
+		margin-bottom: 10px
+
+	&-bottom
+		display: flex
+		align-items: center
+
+

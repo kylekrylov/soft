@@ -1,0 +1,371 @@
+.header
+	margin-bottom: 49px
+
+	&__top 
+		display: flex
+		justify-content: space-between
+
+		&-wrapper
+			position: fixed
+			left: 0
+			top: 0
+			z-index: 15
+
+			width: 100%
+			padding: 22px 0
+
+			background: #ffffff
+
+			+trs
+
+			&_fixed 
+				// padding: 27px 0
+
+				.logo-wrapper
+					p 
+						font-size: 14px
+
+					img 
+						width: 28px
+						height: 28px					
+
+				.header
+					&__tel 
+						margin-right: 15px
+
+						font-size: 22px
+
+						svg
+							fill: #2f2e3c
+
+					&__menu 
+						padding: 0
+
+						li 
+							margin-right: 20px
+
+					&__bottom
+						// margin-top: 0
+
+				.nice-select-wrapper
+					display: none
+
+	&__bottom
+		display: flex
+		align-items: center
+		margin-top: 85px 
+		height: 42px
+
+		background-color: #f8f8f8
+
+		&-mobile
+			display: none
+
+	&__left,
+	&__right 
+		display: flex
+		align-items: center
+
+	&__right 
+		justify-content: flex-end
+
+		&-wrapper
+			width: 100%
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+	&__tel 
+		margin-right: 20px
+
+		color: #121a27
+		font-size: 14.7px
+		+bold
+		+trs 
+
+		svg 
+			+trs
+
+		&:hover
+			color: $active
+
+			svg
+				fill: $active
+
+		span
+			margin-left: 6px
+	
+	&__menu
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 0 25px
+
+		li 
+			display: flex
+			justify-content: center
+			align-items: center
+
+			color: #717171
+			font-size: 14px
+			cursor: pointer
+			+bold
+			+trs
+			
+			&:hover
+				color: #000000
+
+	&__main 
+		position: relative
+
+		min-height: 476px
+
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+
+		color: #ffffff
+
+		.container 
+			padding-top: 60px
+			padding-bottom: 50px
+
+	&__title
+		max-width: 860px
+		margin-bottom: 16px
+
+		line-height: .9
+		letter-spacing: 1.1px
+		font-size: 46px
+		+bold
+
+	&__subtitle
+		display: flex
+		align-items: center
+		margin-bottom: 23px
+
+		font-size: 36px
+
+	&__list
+		margin-bottom: 36px
+
+		li 
+			position: relative
+
+			margin-bottom: 4px
+
+			line-height: 1
+			+light 
+
+			&:before
+				content: ''
+				width: 9px
+				height: 9px
+				display: inline-block
+				margin-right: 8px
+
+				background: #ffffff
+				border-radius: 50%
+
+	&__form
+		.input-wrapper
+			margin-bottom: 17px
+
+		span
+			width: 100%
+			max-width: 255px
+			height: 60px 
+
+			input 
+				padding-left: 40px
+				padding-right: 40px
+
+				border-radius: 30px
+				border: 2px solid #bbc8ce
+				background: transparent
+
+				font-size: 14px
+				color: #ffffff
+
+				&::placeholder
+					color: #ffffff
+
+
+		.submit
+			width: 218px
+			height: 60px
+			margin-left: 15px
+
+		small 
+			font-size: 12px
+
+	&__img 
+		position: absolute
+		right: 55px
+		bottom: -47px
+
+.scroll 
+	display: flex
+
+.logo-wrapper
+	display: flex
+	align-items: center
+
+	+trs
+
+	p 
+		line-height: 1
+		font-size: 16px
+		+eb
+		+trs 
+
+	small 
+		font-size: 12px
+		font-weight: 400
+		line-height: 1
+		+bold
+
+	img 
+		margin-right: 10px
+
+		+trs 
+
+.nice-select
+	position: relative
+	
+	display: flex
+	align-items: center
+
+	min-width: 127px
+	height: 29px
+
+	padding-left: 20px
+	padding-right: 33px
+	border-radius: 15px
+	border: 1px solid #000
+
+	font-size: 12px
+
+	cursor: pointer
+	transition: all 0.2s ease-in-out
+	user-select: none
+	white-space: nowrap
+
+	&-wrapper
+		display: flex
+		align-items: center
+		margin-left: -17px
+
+		+trs
+
+		small 
+			margin-right: 10px
+			
+			font-size: 12px
+
+	&:hover
+		background: darken(#e9eff3, 6%)
+
+	.list
+		position: absolute
+		top: 100%
+		left: 0
+		// right: 0
+		z-index: 9
+
+		margin-top: 4px
+		padding: 0
+
+		background-color: #fff
+		
+		opacity: 0
+		// overflow: hidden
+		background: #ffffff
+		pointer-events: none
+		white-space: nowrap
+		transform-origin: 50% 0
+		transform: scale(0.75) translateY(-21px)
+		transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out
+
+		li
+			display: block
+			min-height: 40px
+			padding-left: 18px
+			padding-right: 29px
+
+			font-weight: 400
+			line-height: 40px
+			text-align: left
+			list-style: none
+			background: #ffffff
+			
+			outline: none
+			transition: all 0.2s
+			cursor: pointer
+			border-bottom: 1px solid #f2f2f2
+
+			+trs
+
+			&:last-child
+				border: none
+
+			img
+				display: none
+			
+			.cities-title 
+				display: none
+
+			&:hover
+				background: $active
+				color: #ffffff
+
+	&.open
+		&:after 
+			transform: rotate(-135deg) 
+
+		.list 
+			opacity: 1
+			pointer-events: auto
+			transform: scale(1) translateY(0) 
+
+	&:after 
+		content: ''
+
+		position: absolute
+		right: 20px
+		top: 50%
+		
+		border-bottom: 2px solid #25313f
+		border-right: 2px solid #25313f
+		width: 5px 
+		height: 5px
+		margin-top: -3px
+
+		transform-origin: 66% 66%
+		transform: rotate(45deg)
+		transition: all 0.15s ease-in-out
+		pointer-events: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

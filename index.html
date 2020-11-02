@@ -1,0 +1,866 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="robots" content="noindex" />
+
+      <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+      <link rel="manifest" href="assets/favicon/site.webmanifest" />
+      <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+      <meta name="msapplication-TileColor" content="#da532c" />
+      <meta name="theme-color" content="#ffffff" />
+
+      <!-- Общие стили -->
+      <!-- <link rel="stylesheet" href="assets/css/vendor.css"> -->
+      <link rel="preload" href="assets/css/vendor.css" as="style" onload="this.rel='stylesheet'" />
+
+      <!-- Основной файл стилей -->
+      <link rel="preload" href="assets/css/style.css" as="style" onload="this.rel='stylesheet'" />
+
+      <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+
+      <title>Установка программ на Ваш ПК</title>
+   </head>
+
+   <body>
+      <!-- main -->
+      <main>
+         <!-- header -->
+         <header class="header margin">
+            <div class="header__top-wrapper">
+               <div class="container">
+                  <div class="row header__top">
+                     <div class="col-8 col-md-4 d-flex">
+                        <div class="scroll">
+                           <a href="#home" class="scroll logo-wrapper">
+                              <img src="assets/img/logo.svg" alt="logo" width="32" class="logo" />
+                              <div class="right">
+                                 <p>SoftMan</p>
+                                 <small>Установка программ на Ваш ПК</small>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-4 col-md-8 header__right-wrapper">
+                        <div class="nice-select-wrapper">
+                           <small>Ваш город:</small>
+                           <div class="nice-select" tabindex="0">
+                              <span class="current">Москва</span>
+                              <ul class="list">
+                                 <li data-value="Москва" data-display="Москва" class="option selected">Москва</li>
+                                 <li data-value="1" class="option">Самара</li>
+                                 <li data-value="2" class="option">Ростов</li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="header__right">
+                           <a class="header__tel" href="tel:+88121111111">
+                              <svg class="phone">
+                                 <use xlink:href="assets/sprite.svg#phone"></use>
+                              </svg>
+                              <span>8 (812) 995-44-57</span>
+                           </a>
+                           <button class="button header__button" data-toggle="modal" data-target="#popup-call">
+                              Связаться <span class="d-lg-none">с нами</span>
+                           </button>
+                           <a href="#" class="menu-link">
+                              <span class="menu-lines"></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="header__bottom">
+               <div class="container">
+                  <ul class="menu header__menu">
+                     <li><a href="#work">Преимущества</a></li>
+                     <li><a href="#price">Прайс</a></li>
+                     <li><a href="#feedback">Отзывы</a></li>
+                     <li><a href="#contact">Контакты</a></li>
+                  </ul>
+                  <div class="header__bottom-mobile">
+                     <div class="nice-select" tabindex="0">
+                        <span class="current">Москва</span>
+                        <ul class="list">
+                           <li data-value="Москва" data-display="Москва" class="option selected">Москва</li>
+                           <li data-value="1" class="option">Самара</li>
+                           <li data-value="2" class="option">Ростов</li>
+                        </ul>
+                     </div>
+                     <a class="header__tel" href="tel:+88129954457">
+                        <svg class="phone">
+                           <use xlink:href="assets/sprite.svg#phone"></use>
+                        </svg>
+                        <span>8 (812) 111-11-11</span>
+                     </a>
+                     <button class="button header__button" data-toggle="modal" data-target="#popup-call">
+                        Связаться <span>с нами</span>
+                     </button>
+                  </div>
+               </div>
+            </div>
+            <div class="header__main mobile-bg" style="background-image: url(assets/img/header-bg.webp)">
+               <div class="container">
+                  <h1 class="header__title">Установка программ на Ваш компьютер с выездом на дом</h1>
+                  <div class="header__subtitle">Дарим скидку 20% на все работы!</div>
+                  <ul class="header__list">
+                     <li>При одновременном ремонте двух и более компьютеров</li>
+                     <li>При первичном обращении</li>
+                     <li>Всем пенсионерам и льготникам</li>
+                  </ul>
+                  <div class="form header__form">
+                     <form action="#" method="post">
+                        <span style="display: none">
+                           <input type="hidden" value="20%" />
+                        </span>
+                        <div class="input-wrapper">
+                           <span>
+                              <input name="tel" type="tel" placeholder="Ваш телефон" required />
+                           </span>
+                           <button type="submit" class="submit button_red">Получить скидку</button>
+                        </div>
+                     </form>
+                     <small>Нажимая кнопку “Получить скидку” Вы соглашаетесь на обработку данных</small>
+                  </div>
+                  <picture class="header__img">
+                     <source srcset="assets/img/header-img.webp" type="image/webp" />
+                     <source srcset="assets/img/header-img.png" type="image/png" />
+                     <img src="assets/img/header-img.png" alt="img" />
+                  </picture>
+               </div>
+            </div>
+         </header>
+
+         <!-- about -->
+         <section id="about" class="about margin">
+            <div class="container">
+               <h2 class="about__title title">О нас в цифрах и фактах</h2>
+               <div class="row about-wrapper">
+                  <div class="col-12 col-md-6 col-lg-3 about__item" data-toggle="modal" data-target="#popup-call">
+                     <div class="about__item-title">5 лет</div>
+                     <div class="about__item-text">мы ремонтируем компьютеры и ноутбуки</div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 about__item" data-toggle="modal" data-target="#popup-call">
+                     <div class="about__item-title">15 000</div>
+                     <div class="about__item-text">И больше установленных программ</div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 about__item" data-toggle="modal" data-target="#popup-call">
+                     <div class="about__item-title">6 000</div>
+                     <div class="about__item-text">Оффициальных программ установленно на ПК</div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 about__item" data-toggle="modal" data-target="#popup-call">
+                     <div class="about__item-title">16 300</div>
+                     <div class="about__item-text">Удаленных вирусов с компьютеров</div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- warranty -->
+         <section id="warranty" class="warranty margin">
+            <div class="container">
+               <h2 class="warranty__title title">Мы гарантируем</h2>
+               <div class="row warranty-wrapper">
+                  <div
+                     class="col-12 col-md-6 warranty__item"
+                     data-toggle="modal"
+                     data-target="#popup-call"
+                     style="background-image: url(assets/img/warranty/1.png)"
+                  >
+                     <div class="warranty__item-number">01</div>
+                     <div class="warranty__item-text">Быструю загрузку вашего компьютера или ноутбука при включении.</div>
+                  </div>
+                  <div
+                     class="col-12 col-md-6 warranty__item"
+                     data-toggle="modal"
+                     data-target="#popup-call"
+                     style="background-image: url(assets/img/warranty/2.png)"
+                  >
+                     <div class="warranty__item-number">02</div>
+                     <div class="warranty__item-text">Бесперебойную работу установленных программ.</div>
+                  </div>
+                  <div
+                     class="col-12 col-md-6 warranty__item"
+                     data-toggle="modal"
+                     data-target="#popup-call"
+                     style="background-image: url(assets/img/warranty/3.png)"
+                  >
+                     <div class="warranty__item-number">03</div>
+                     <div class="warranty__item-text">Безопасную работу пользователя в сети Интернет.</div>
+                  </div>
+                  <div
+                     class="col-12 col-md-6 warranty__item"
+                     data-toggle="modal"
+                     data-target="#popup-call"
+                     style="background-image: url(assets/img/warranty/4.png)"
+                  >
+                     <div class="warranty__item-number">04</div>
+                     <div class="warranty__item-text">Полное восстановление работы компьютера после вируса.</div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- work -->
+         <section id="work" class="work margin">
+            <div class="container">
+               <h2 class="work__title title">Работая с нами вы экономите:</h2>
+               <div class="row work-wrapper">
+                  <div class="col-12 col-md-4 work__item">
+                     <div class="work__item-left">
+                        <div class="work__item-number">01</div>
+                     </div>
+                     <div class="work__item-right">
+                        <div class="work__item-title">Средства</div>
+                        <div class="work__item-text">
+                           Мы бережем ваши финансы и предлагаем бесплатный выезд мастера, диагностику и транспортировку компьютера
+                           в сервис и обратно, а также дарим скидки при заказе услуги через сайт.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-4 work__item">
+                     <div class="work__item-left">
+                        <div class="work__item-number">02</div>
+                     </div>
+                     <div class="work__item-right">
+                        <div class="work__item-title">Силы</div>
+                        <div class="work__item-text">
+                           Вам не придется ехать к нам в офис, мы пришлем мастера в любое удобное для вас место и время.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-4 work__item">
+                     <div class="work__item-left">
+                        <div class="work__item-number">03</div>
+                     </div>
+                     <div class="work__item-right">
+                        <div class="work__item-title">Время</div>
+                        <div class="work__item-text">
+                           Уже через 10-15 минут после оформления заявки специалист отправится на адрес и приступит к выполнению
+                           работ не позже, чем через час.
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- offer -->
+         <section class="offer mobile-bg margin" style="background-image: url(assets/img/offer-bg.webp)">
+            <div class="container">
+               <div class="offer-wrapper">
+                  <h2 class="offer__title">Настроим и установим ПО для комфортной работы на пк и ноутбуках</h2>
+                  <ul class="offer__list">
+                     <li>
+                        <span class="offer__list-left">
+                           <svg class="security">
+                              <use xlink:href="assets/sprite.svg#security"></use>
+                           </svg>
+                        </span>
+                        <p>
+                           Гарантия на работы <br />
+                           от 1 года
+                        </p>
+                     </li>
+                     <li>
+                        <span class="offer__list-left">
+                           <svg class="settings">
+                              <use xlink:href="assets/sprite.svg#settings"></use>
+                           </svg>
+                        </span>
+                        <p>
+                           Только <br />
+                           лицензионное ПО
+                        </p>
+                     </li>
+                     <li>
+                        <span class="offer__list-left">
+                           <svg class="search">
+                              <use xlink:href="assets/sprite.svg#search"></use>
+                           </svg>
+                        </span>
+                        <p>
+                           Бесплатная диагностика <br />
+                           возникшей проблемы
+                        </p>
+                     </li>
+                  </ul>
+                  <div class="offer__form">
+                     <div class="offer__form-text">Оставьте заявку, мы перезвоним Вам!</div>
+                     <form action="#" method="post">
+                        <span style="display: none">
+                           <input type="hidden" value="20%" />
+                        </span>
+                        <div class="input-wrapper">
+                           <input type="hidden" value="Блок со скидкой" />
+                           <span>
+                              <input name="tel" type="tel" placeholder="Ваш телефон" required />
+                           </span>
+                           <button type="submit" class="submit button button_red">Оставить заявку</button>
+                        </div>
+                     </form>
+                     <small>Нажимая кнопку «Оставить заявку» Вы соглашаетесь на обработку данных</small>
+                  </div>
+                  <picture class="offer__img">
+                     <source srcset="assets/img/offer-img.webp" type="image/webp" />
+                     <source srcset="assets/img/offer-img.png" type="image/png" />
+                     <img src="assets/img/offer-img.png" alt="img" />
+                  </picture>
+               </div>
+            </div>
+         </section>
+
+         <!-- price -->
+         <section id="price" class="price margin">
+            <div class="container">
+               <h2 class="price__title title">Таблица цен и услуг</h2>
+               <div class="price__table">
+                  <div class="price__row">
+                     <span>Поломка</span>
+                     <span>Стоимость</span>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Выезд мастера</span>
+                     <span> Бесплатно</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Доставить в сервис-центр и обратно</span>
+                     <span> Бесплатно</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Диагностика </span>
+                     <span>Бесплатно</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Установка WINDOWS</span>
+                     <span> 441 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Настройка роутера </span>
+                     <span>470 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Удаление вирусов </span>
+                     <span>304 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Чистка от пыли </span>
+                     <span>480 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Установка антивируса (1 год)</span>
+                     <span> 382 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Настройка биоса </span>
+                     <span>549 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Установка драйвера </span>
+                     <span>186 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Настройка / установка программ </span>
+                     <span>314 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Установка офиса (Word, Excel) </span>
+                     <span>676 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Замена комплектующих </span>
+                     <span>583 руб. <small>+ стоимость запчасти</small></span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Замена термопасты </span>
+                     <span> 431 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Настройка принтера </span>
+                     <span> 412 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Настройка почты </span>
+                     <span>441 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Обучение работе с ПК (30 мин.)</span>
+                     <span> 676 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Восстановление пароля Wi-Fi роутера </span>
+                     <span>676 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Восстановление данных </span>
+                     <span>284 руб. <small>за ГБ</small></span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Замена дисплея</span>
+                     <span> 583 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Замена жесткого диска (HDD)</span>
+                     <span> 485 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Замена и ремонт клавиатуры </span>
+                     <span>485 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Замена кулера </span>
+                     <span>583 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Замена оперативной памяти </span>
+                     <span>485 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Замена порта USB </span>
+                     <span>485 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Замена разъема питания </span>
+                     <span>485 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Замена северного моста </span>
+                     <span>583 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Замена термопасты </span>
+                     <span>436 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Замена шлейфа </span>
+                     <span>583 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Замена экрана </span>
+                     <span>583 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Замена южного моста </span>
+                     <span>583 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Замена wi-fi модуля </span>
+                     <span>485 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Лечение вирусов </span>
+                     <span>319 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Починка и замена корпуса </span>
+                     <span>583 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Починка и замена матрицы </span>
+                     <span>583 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Починка и замена разъемов </span>
+                     <span>485 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Починка и замена шлейфа матрицы </span>
+                     <span>583 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Починка и чистка системы охлаждения </span>
+                     <span>582 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Починка или замена видеокарты</span>
+                     <span> 583 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Починка лампы подсветки матрицы </span>
+                     <span>583 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Починка материнской платы </span>
+                     <span>583 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Починка после залития </span>
+                     <span>583 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Установка и настройка Windows </span>
+                     <span>319 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Установка или замена процессора </span>
+                     <span>485 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Установка/замена привода DVD/CD/CDRW </span>
+                     <span>485 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Замена звуковой карты </span>
+                     <span>387 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+                  <div class="price__row" data-toggle="modal" data-target="#popup-call">
+                     <span>Замена блока питания </span>
+                     <span>485 руб.</span>
+                     <button>Заказать</button>
+                  </div>
+               </div>
+               <div class="price__bottom">
+                  <button class="price__button">
+                     <svg class="eye">
+                        <use xlink:href="assets/sprite.svg#eye"></use>
+                     </svg>
+                     <span>Увидеть все возможные поломки</span>
+                  </button>
+                  <button class="button_red price__call-button d-md-none" data-toggle="modal" data-target="#popup-call">
+                     Заказать
+                  </button>
+                  <div class="price__bottom-right">
+                     <small>Возможность безналичной оплаты</small>
+                     <div class="price__payment">
+                        <img src="assets/img/yandex.png" alt="Яндекс деньги" />
+                        <img src="assets/img/master.png" alt="Mastercard" />
+                        <img src="assets/img/visa.png" alt="Visa" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- features -->
+         <section id="features" class="features margin mobile-bg" style="background-image: url(assets/img/features-bg.webp)">
+            <div class="container">
+               <h2 class="features__title title">Наши преимущества работают на вас!</h2>
+               <div class="row features-wrapper">
+                  <div class="col-12 col-md-6 col-lg-3 features__item">
+                     <div class="features__item-title">Надёжно</div>
+                     <div class="features__item-text">Мы предоставляем гарантию на наши услуги от 1 года</div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 features__item">
+                     <div class="features__item-title">Опытные мастера</div>
+                     <div class="features__item-text">
+                        Все наши специалисты имеют профильное образование и большой стаж работы
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 features__item">
+                     <div class="features__item-title">Компьютерная помощь</div>
+                     <div class="features__item-text">
+                        Установим и настроим любое программное обеспечение на компьютер или ноутбук
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 features__item">
+                     <div class="features__item-title">В режиме Non-Stop</div>
+                     <div class="features__item-text">Мы работаем без обеда и выходных и принимаем заявки даже ночью</div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- questions -->
+         <section id="questions" class="questions margin">
+            <div class="container">
+               <div class="questions-bg">
+                  <div class="row questions__top">
+                     <div class="col-12 col-md-6">
+                        <h2 class="questions__title title">Остались вопросы?</h2>
+                     </div>
+                     <div class="col-12 col-md-6">
+                        <div class="questions__subtitle">
+                           Задайте их прямо сейчас! Заполните простую форму и я перезвоню в&nbsp;течение 10 минут
+                        </div>
+                     </div>
+                  </div>
+                  <div class="quesitons__form">
+                     <form action="#">
+                        <span style="display: none">
+                           <input type="hidden" value="20%" />
+                        </span>
+                        <div class="input-wrapper">
+                           <span>
+                              <input name="name" type="text" placeholder="Ваше имя" />
+                           </span>
+                           <span>
+                              <input name="tel" type="tel" placeholder="Ваш телефон" required />
+                           </span>
+                        </div>
+                        <textarea name="message" cols="30" rows="3" placeholder="Ваш вопрос..." required></textarea>
+                        <div class="questions__bottom">
+                           <button type="submit" class="submit button button_red">Получить ответ</button>
+                           <small>Нажимая кнопку “Получить ответ” Вы соглашаетесь на обработку данных.</small>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- feedback -->
+         <section id="feedback" class="feedback margin">
+            <div class="container">
+               <div class="feedback-bg">
+                  <div class="row feedback__top">
+                     <div class="col-12 col-md-8">
+                        <h2 class="feedback__title">Почитайте отзывы о нас</h2>
+                     </div>
+                     <div class="col-12 col-md-4 feedback__top-right">
+                        <button class="button feedback__button">Показать все отзывы</button>
+                     </div>
+                  </div>
+                  <div class="row feedback-wrapper">
+                     <div class="col-12 col-md-6 feedback__item">
+                        <div class="feedback__item-top">
+                           <div class="feedback__item-img" style="background-image: url(assets/img/feedback/2.webp)"></div>
+                           <div class="feedback__item-name">Марина Ковалёва</div>
+                        </div>
+                        <div class="feedback__item-text">
+                           Обратилась в фирму SoftMan для установки программ на новый компьютер. Сын пошел в первый класс, купили
+                           ему ноутбук. Мастер все очень грамотно сделал, настроил систему, поставил все нужные программы и даже
+                           игры. Ребенок очень рад! Спасибо, очень хороший сервис!
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-6 feedback__item">
+                        <div class="feedback__item-top">
+                           <div class="feedback__item-img" style="background-image: url(assets/img/feedback/3.webp)"></div>
+                           <div class="feedback__item-name">Анастасия Павлова</div>
+                        </div>
+                        <div class="feedback__item-text">
+                           Ноутбук дико тормозил, работать было невозможно. Вызвала мастера он проверил ноут, нашел кучу вирусов,
+                           удалил, поставил антивирус, Винду настроил. Теперь все летает! Огромное спасибо!
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-6 feedback__item">
+                        <div class="feedback__item-top">
+                           <div class="feedback__item-img" style="background-image: url(assets/img/feedback/4.webp)"></div>
+                           <div class="feedback__item-name">Алина Малафеева</div>
+                        </div>
+                        <div class="feedback__item-text">
+                           Вызывала мастера, чтобы установить на компьютер Microsoft Office и подключить принтер. Сама в этом не
+                           разбираюсь. Мастер очень быстро все сделал и даже показал, как пользоваться. Благодарю за помощь!
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-6 feedback__item">
+                        <div class="feedback__item-top">
+                           <div class="feedback__item-img" style="background-image: url(assets/img/feedback/1.webp)"></div>
+                           <div class="feedback__item-name">Аркадий Баев</div>
+                        </div>
+                        <div class="feedback__item-text">
+                           Хочу поблагодарить сервис SoftMan за хорошую работу! Мастера приглашал, чтобы поставить 10- ку на ноут
+                           жены с Windows 8. Парень приехал быстро, систему настроил грамотно, поставил все драйвера, программы,
+                           которые жена просила. Все работает исправно! Супруга довольна!
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-6 feedback__item">
+                        <div class="feedback__item-top">
+                           <div class="feedback__item-img" style="background-image: url(assets/img/feedback/5.webp)"></div>
+                           <div class="feedback__item-name">Евгений Григорьев</div>
+                        </div>
+                        <div class="feedback__item-text">
+                           Искал сервис с адекватными ценами. Работой ваших мастеров остался доволен. Все, что надо, было сделано
+                           в лучшем виде! Буду советовать вас друзьям!
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-6 feedback__item">
+                        <div class="feedback__item-top">
+                           <div class="feedback__item-img" style="background-image: url(assets/img/feedback/6.webp)"></div>
+                           <div class="feedback__item-name">Виктор Кузьменко</div>
+                        </div>
+                        <div class="feedback__item-text">
+                           Вызывали мастера для удаления вирусов, восстановления поврежденных файлов. Все почистили, мастер
+                           установил антивирус, данные восстановил, дал много полезных рекомендаций. Не цене вышло вообще
+                           недорого. Реальный сервис, хорошо работают.
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-6 feedback__item">
+                        <div class="feedback__item-top">
+                           <div class="feedback__item-img" style="background-image: url(assets/img/feedback/7.webp)"></div>
+                           <div class="feedback__item-name">Стас Ершов</div>
+                        </div>
+                        <div class="feedback__item-text">
+                           Пролил кофе на клавиатуру ноута, пришлось клаву менять. Мастер из «SoftMan» все сделал профессионально,
+                           быстро. Цена до и после ремонта не изменилась, как это бывает в некоторых конторах. Этому СЦ можно
+                           доверять, работают четко.
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- contact -->
+         <section id="contact" class="contact">
+            <div class="map"></div>
+            <div class="container">
+               <div class="contact__left">
+                  <h2 class="contact__title">Наши контакты</h2>
+                  <div class="contact__subtitle">Cвяжитесь с нами любым удобным для Вас способомм</div>
+                  <a href="tel:+88121111111" class="contact__tel">
+                     <svg class="flag">
+                        <use xlink:href="assets/sprite.svg#flag"></use>
+                     </svg>
+                     <span>8 (812) 995-44-57</span>
+                  </a>
+                  <div class="contact__form">
+                     <div class="contact__form-title">Задайте нам вопрос</div>
+                     <form action="#">
+                        <span style="display: none">
+                           <input type="hidden" value="20%" />
+                        </span>
+                        <div class="input-wrapper">
+                           <span>
+                              <input name="name" type="text" placeholder="Ваше имя" />
+                           </span>
+                           <span>
+                              <input name="tel" type="tel" placeholder="Ваш телефон" required />
+                           </span>
+                        </div>
+                        <textarea name="comment" cols="30" rows="4" required placeholder="Ваш комментарий"></textarea>
+                        <div class="contact__form-bottom">
+                           <button type="submit" class="button_red submit">Отправить</button>
+                           <small>Нажимая кнопку “Отправить” Вы соглашаетесь на обработку Ваших данных</small>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <!-- footer -->
+      <footer class="footer">
+         <div class="container">
+            <div class="footer-wrapper">
+               <div class="col-12 col-md-4 footer__left">
+                  <div class="scroll">
+                     <a href="#home" class="scroll logo-wrapper">
+                        <img src="assets/img/logo.svg" alt="logo" width="32" class="logo" />
+                        <div class="right">
+                           <p>SoftMan</p>
+                           <small>Установка программ на Ваш ПК</small>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-12 col-md-4 col-lg-5 footer__middle">
+                  <ul class="menu footer__menu">
+                     <li><a href="#features" class="scroll">Преимущества</a></li>
+                     <li><a href="#price" class="scroll">Прайс</a></li>
+                     <li><a href="#feedback" class="scroll">Отзывы</a></li>
+                     <li><a href="#contact" class="scroll">Контакты</a></li>
+                  </ul>
+                  <small>Представленная информация на сайте не является публичной офертой</small>
+               </div>
+               <div class="col-12 col-md-4 col-lg-3 footer__right">
+                  <div class="footer__right-top">
+                     <a class="footer__tel" href="tel:+88121111111"> 8 (812) 111-11-11 </a>
+                     <button class="button footer__button" data-toggle="modal" data-target="#popup-call">Заказать звонок</button>
+                  </div>
+                  <!-- <a href="#" class="footer__pol">Политика конфиденциальности</a> -->
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <!-- Заказать звонок -->
+      <div class="modal fade popup popup-call" id="popup-call" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-dialog popup__dialog" role="document">
+            <div class="modal-content popup__content">
+               <div class="popup__close close" data-dismiss="modal">&times;</div>
+               <div class="popup__title">Связь с нами</div>
+               <div class="popup__subtitle">
+                  Заполните форму ниже и мы перезвоним <br />
+                  Вам в течение 5 минут
+               </div>
+               <form action="#" method="post" class="popup__form">
+                  <span style="display: none">
+                     <input type="hidden" class="modal__info" />
+                  </span>
+                  <span>
+                     <input name="name" type="text" placeholder="Ваше имя" />
+                  </span>
+                  <span>
+                     <input name="tel" type="tel" placeholder="Ваш телефон" required />
+                  </span>
+                  <button type="submit" class="submit button">Перезвоните мне</button>
+                  <small
+                     >Нажимая кнопку “Перезвоните мне” Вы соглашаетесь на обработку <br />
+                     Ваших, персональных данных.</small
+                  >
+               </form>
+            </div>
+         </div>
+      </div>
+
+      <!-- Окно благодарности -->
+      <div class="modal fade popup-thank" id="popup-thank" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-dialog popup__dialog" role="document">
+            <div class="modal-content popup__content">
+               <div class="popup__close close" data-dismiss="modal">&times;</div>
+               <div class="popup__title">Спасибо</div>
+               <div class="popup__subtitle">Мы перезвоним Вам в течение 5&nbsp;минут!</div>
+               <button class="button popup-thank__button" data-dismiss="modal">Жду звонка</button>
+            </div>
+         </div>
+      </div>
+
+      <!-- Общие скрипты -->
+      <script src="assets/js/vendor.js"></script>
+
+      <!-- Основной js файл -->
+      <script src="assets/js/script.js"></script>
+   </body>
+</html>

@@ -1,0 +1,46 @@
+.menu
+	&-link
+		display: none
+		
+		position: relative
+
+		width: 35px
+		height: 35px
+		margin-left: 8px
+		background: transparent
+		border-radius: 4px
+		transition: 0.4s
+
+		&_active
+			.menu-lines
+				background: transparent
+
+				&:after
+					top: 0
+					transform: rotate(-135deg)
+
+				&:before
+					top: 0
+					transform: rotate(135deg)
+
+	&-lines,
+	&-lines:before,
+	&-lines:after
+		position: absolute
+		width: 30px
+		height: 2.5px
+		background-color: $active
+		transition: 0.4s
+
+	&-lines
+		top: 50%
+		right: 0
+		transform: translate(0, -50%)
+
+		&:before
+			content: ''
+			top: -9px
+
+		&:after
+			content: ''
+			top: 9px
